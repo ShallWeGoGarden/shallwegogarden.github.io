@@ -21,8 +21,8 @@ markdown_extensions:
 
 #####################
 # NAV 
-nav:
-- Home: index.md
+# nav:
+# - Home: index.md
 
 #####################
 # THEME
