@@ -1,0 +1,82 @@
+#####################
+# BASICS
+site_name: Shall We Go Garden
+site_url: https://shallwegogarden.github.io
+markdown_extensions:
+    - smarty
+    - meta
+    - attr_list
+    - md_in_html
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.superfences
+    - pymdownx.tabbed:
+        alternate_style: true
+    - admonition
+    - pymdownx.details
+
+# Quotes uses Admonitions
+# https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+
+#####################
+# NAV 
+nav:
+- Home: index.md
+
+#####################
+# THEME
+theme:
+    name: material
+    #custom_dir: docs/material
+
+    # 404 page
+    static_templates:
+        - 404.html
+
+    # Necessary for search to work properly
+    include_search_page: false
+    search_index_only: true
+
+    # Default values, taken from mkdocs_theme.yml, necessary for github pages deployment
+    language: en
+    font:
+        text: Roboto
+        code: Roboto Mono
+    # favicon: assets/images/favicon.png
+    icon:
+        logo: logo
+    palette:
+        - scheme: default
+          primary: deep purple
+          accent: green
+          toggle:
+            icon: material/toggle-switch-off-outline 
+            name: Switch to dark mode
+        - scheme: slate 
+          toggle:
+            icon: material/toggle-switch
+            name: Switch to light mode
+
+    # Additional Values
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - toc.follow
+        #- toc.integrate
+        - navigation.top
+
+#####################
+# EXTRAS
+use_directory_urls: false # enabled the direct html link for the Guntley PV Barn
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://www.github.com/shallwegogarden
+
+#####################
+# PLUGINS
+plugins:
+    - search
+    - glightbox
+    #- table-reader
