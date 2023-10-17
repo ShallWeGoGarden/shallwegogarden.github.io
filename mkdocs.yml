@@ -48,8 +48,8 @@ theme:
         logo: logo
     palette:
         - scheme: default
-          primary: deep purple
-          accent: green
+          primary: light blue
+          accent: gray
           toggle:
             icon: material/toggle-switch-off-outline 
             name: Switch to dark mode

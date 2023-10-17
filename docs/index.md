@@ -1,3 +1,3 @@
 # Home
 
-Site coming soon...
+Site in development.
